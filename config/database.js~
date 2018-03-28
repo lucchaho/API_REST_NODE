@@ -1,0 +1,12 @@
+var mysql      = require('mysql');
+var config;
+config = {
+    mysql_pool : mysql.createPool({
+        host     : '172.16.237.113',
+        user     : 'root',
+        password : 'root',
+        database : 'etna_crowding'
+    })
+};
+
+module.exports = config;
